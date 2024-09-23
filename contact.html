@@ -2,14 +2,25 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <!-- Definimos la codificación de caracteres como UTF-8 para admitir caracteres especiales en español -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Archivo general de estilos -->
-    <link rel="stylesheet" href="contact-styles.css"> <!-- Archivo específico para el formulario -->
+    <!-- Configura el viewport para que el diseño sea responsivo en dispositivos móviles -->
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlazamos el archivo CSS general de la página -->
+
+    <link rel="stylesheet" href="contact-styles.css">
+    <!-- Enlazamos un archivo CSS específico para el formulario de contacto -->
+
     <title>USMPDROJ - Contacto</title>
+    <!-- Definimos el título de la pestaña del navegador -->
 </head>
 <body>
     <header>
         <h1>USMPDROJ</h1>
+        <!-- Título o nombre de la página, ubicado dentro del header -->
+
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -18,27 +29,43 @@
                 <li><a href="login.html">Login</a></li>
                 <li><a href="about.html">Acerca de</a></li>
             </ul>
+            <!-- Menú de navegación con enlaces a las diferentes páginas del sitio -->
         </nav>
     </header>
 
     <main>
         <h2>Contáctanos</h2>
+        <!-- Título principal para la sección de contacto -->
+
         <form action="submit_contact.php" method="POST" class="contact-form">
+            <!-- Formulario de contacto, que enviará los datos mediante el método POST al archivo "submit_contact.php" -->
+
             <label for="name">Nombre:</label>
+            <!-- Etiqueta para el campo de nombre -->
+
             <input type="text" id="name" name="name" required>
+            <!-- Campo de texto para que el usuario ingrese su nombre. Es un campo requerido -->
 
             <label for="email">Correo Electrónico:</label>
+            <!-- Etiqueta para el campo de correo electrónico -->
+
             <input type="email" id="email" name="email" required>
+            <!-- Campo de entrada de tipo email, que validará automáticamente que el formato sea un correo electrónico. Es un campo requerido -->
 
             <label for="message">Mensaje:</label>
+            <!-- Etiqueta para el área de texto donde el usuario escribirá su mensaje -->
+
             <textarea id="message" name="message" required></textarea>
+            <!-- Área de texto para que el usuario ingrese su mensaje. Es un campo requerido -->
 
             <button type="submit">Enviar</button>
+            <!-- Botón para enviar el formulario. Al hacer clic se envían los datos al servidor -->
         </form>
     </main>
 
     <footer>
         <p>&copy; 2024 USMPDROJ. Todos los derechos reservados.</p>
+        <!-- Pie de página con el aviso de derechos de autor -->
     </footer>
 </body>
 </html>
