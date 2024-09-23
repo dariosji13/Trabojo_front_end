@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles_admin.css">
+    <link rel="stylesheet" href="styles_admin.css"> <!-- Archivo de estilos para el panel de administración -->
     <title>Panel de Administración - USMPDROJ</title>
 </head>
 <body>
     <header>
         <h1>Panel de Administración - USMPDROJ</h1>
+        <!-- Barra de navegación del panel de administración -->
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -21,6 +22,7 @@
     </header>
 
     <main>
+        <!-- Sección para la gestión de usuarios -->
         <section class="admin-panel">
             <h2>Gestión de Usuarios</h2>
             <button class="btn-add" onclick="location.href='add_user.html'">Agregar Usuario</button>
@@ -43,11 +45,12 @@
                             <button class="btn-delete">Eliminar</button>
                         </td>
                     </tr>
-                    <!-- Más filas de usuarios -->
+                    <!-- Más filas de usuarios se pueden agregar aquí -->
                 </tbody>
             </table>
         </section>
 
+        <!-- Sección para la gestión de servicios -->
         <section class="admin-panel">
             <h2>Gestión de Servicios</h2>
             <button class="btn-add" onclick="location.href='add_service.html'">Agregar Servicio</button>
@@ -70,13 +73,14 @@
                             <button class="btn-delete">Eliminar</button>
                         </td>
                     </tr>
-                    <!-- Más filas de servicios -->
+                    <!-- Más filas de servicios se pueden agregar aquí -->
                 </tbody>
             </table>
         </section>
     </main>
 
     <footer>
+        <!-- Pie de página del panel de administración -->
         <p>&copy; 2024 USMPDROJ. Todos los derechos reservados.</p>
     </footer>
 </body>

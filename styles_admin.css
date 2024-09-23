@@ -3,6 +3,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Estilos para el encabezado */
 header {
     background-color: #333;
     color: #fff;
@@ -10,6 +11,7 @@ header {
     text-align: center;
 }
 
+/* Estilos para la navegación */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -27,19 +29,22 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Estilo del título principal */
 h1 {
     margin-bottom: 2rem;
 }
 
+/* Panel de administración */
 .admin-panel {
     margin: 2rem auto;
     width: 80%;
     background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para las tablas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -59,6 +64,7 @@ th {
     background-color: #f2f2f2;
 }
 
+/* Estilos para los botones */
 .btn-add, .btn-edit, .btn-delete {
     padding: 0.5rem 1rem;
     border: none;
@@ -66,16 +72,19 @@ th {
     cursor: pointer;
 }
 
+/* Botón para agregar */
 .btn-add {
     background-color: #28a745;
     color: white;
 }
 
+/* Botón para editar */
 .btn-edit {
     background-color: #007bff;
     color: white;
 }
 
+/* Botón para eliminar */
 .btn-delete {
     background-color: #dc3545;
     color: white;

@@ -2,57 +2,89 @@
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
+    /* Centramos el formulario y limitamos su ancho máximo a 600px */
     background-color: rgba(255, 255, 255, 0.9);
+    /* Le damos un color de fondo blanco semitransparente para que resalte sobre el fondo de la página */
     padding: 20px;
+    /* Añadimos un espacio de relleno interno para que los elementos no estén pegados a los bordes del formulario */
     border-radius: 10px;
+    /* Bordes redondeados para darle un diseño más suave y moderno */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil para que el formulario se vea elevado del fondo */
 }
 
 .contact-form label {
     font-size: 1.1rem;
     color: #2c3e50;
+    /* Color oscuro para el texto del label */
+
     display: block;
     margin-bottom: 10px;
+    /* El label ocupa toda la línea y tiene un espacio inferior para separar del campo */
+
     font-weight: bold;
+    /* Texto en negrita para que destaque sobre el formulario */
 }
 
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
     width: 100%;
+    /* Los campos ocupan el 100% del ancho disponible dentro del formulario */
     padding: 10px;
+    /* Espaciado interno para que el texto dentro de los campos no quede pegado a los bordes */
     border: 2px solid #3498db;
+    /* Borde azul para los campos del formulario */
     border-radius: 5px;
+    /* Bordes redondeados para un diseño suave */
     background-color: #f9fafb;
+    /* Fondo claro para el área de texto */
     font-size: 1rem;
+    /* Tamaño de letra adecuado para el contenido dentro de los campos */
     color: #333;
+    /* Color oscuro para el texto dentro de los campos */
     margin-bottom: 20px;
+    /* Margen inferior para separar cada campo entre sí */
     transition: border-color 0.3s ease, background-color 0.3s ease;
+    /* Transición suave para los cambios de color cuando el campo recibe el enfoque */
 }
 
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
 .contact-form textarea:focus {
     border-color: #1abc9c;
+    /* Cambia el color del borde cuando el campo tiene el foco (activo) */
     background-color: #fff;
+    /* El fondo cambia a blanco puro cuando el campo está en uso */
 }
 
 .contact-form textarea {
     resize: vertical;
+    /* Permite que el área de texto sea redimensionable verticalmente, pero no horizontalmente */
     height: 150px;
+    /* Altura predeterminada del área de texto */
 }
 
 .contact-form button[type="submit"] {
     background-color: #3498db;
+    /* Fondo azul para el botón de envío */
     color: #fff;
+    /* Texto blanco para que contraste bien con el fondo azul */
     border: none;
+    /* Sin bordes alrededor del botón */
     padding: 10px 20px;
+    /* Espaciado interno para hacer el botón más grande y fácil de hacer clic */
     font-size: 1.1rem;
+    /* Tamaño de letra más grande para que el botón sea más legible */
     cursor: pointer;
+    /* El cursor cambia a la mano cuando el usuario pasa el ratón por encima del botón */
     border-radius: 5px;
+    /* Bordes redondeados para que el botón tenga un diseño coherente con el resto del formulario */
     transition: background-color 0.3s ease;
+    /* Transición suave para el cambio de color cuando el usuario interactúa con el botón */
 }
 
 .contact-form button[type="submit"]:hover {
     background-color: #1abc9c;
+    /* Cambia el color de fondo del botón cuando el usuario pasa el ratón sobre él */
 }
