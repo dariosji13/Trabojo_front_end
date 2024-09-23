@@ -1,0 +1,190 @@
+/* Reseteo básico para eliminar los márgenes y el padding predeterminado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y borde no alteren el tamaño total de los elementos */
+}
+
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente legible y moderna */
+    background-color: #f9fafb; /* Color de fondo claro */
+    color: #333; /* Color del texto principal */
+    line-height: 1.8; /* Espaciado entre líneas para facilitar la lectura */
+    background-size: cover; /* Escala el fondo para cubrir la pantalla completa */
+    background-position: center; /* Centra el fondo */
+    background-repeat: no-repeat; /* Evita que el fondo se repita */
+    padding: 30px; /* Espaciado alrededor del contenido del cuerpo */
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    background-color: #34495e; /* Color de fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+    padding: 20px 0; /* Espaciado vertical */
+    text-align: center; /* Centra el texto en el encabezado */
+    position: fixed; /* Fija el encabezado en la parte superior de la página */
+    width: 100%; /* El encabezado ocupa todo el ancho de la pantalla */
+    top: 0; /* Se posiciona en la parte superior */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    font-size: 1.2rem; /* Tamaño del texto */
+}
+
+header h1 {
+    font-size: 2em; /* Tamaño del título principal */
+    margin: 0; /* Sin margen alrededor del título */
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none; /* Elimina los puntos de lista predeterminados */
+    padding: 10px 0; /* Espaciado interno */
+    text-align: center; /* Centra los elementos de la lista */
+    background-color: #2c3e50; /* Color de fondo del menú */
+}
+
+nav ul li {
+    display: inline; /* Los elementos del menú se muestran en línea */
+    margin: 0 20px; /* Espaciado horizontal entre los enlaces */
+}
+
+nav ul li a {
+    color: #fff; /* Color blanco para los enlaces */
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    font-weight: bold; /* Hace que el texto del enlace sea negrita */
+    padding: 5px 15px; /* Espaciado interno en los enlaces */
+    transition: background-color 0.3s ease; /* Transición suave al pasar el ratón por encima */
+}
+
+nav ul li a:hover {
+    background-color: #1abc9c; /* Color de fondo cuando se pasa el ratón por encima */
+    border-radius: 5px; /* Bordes redondeados al hacer hover */
+}
+
+/* Estilos principales del contenido */
+main {
+    padding: 140px 20px 40px; /* Evita que el contenido se superponga con el encabezado fijo */
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil alrededor del contenido */
+}
+
+h2 {
+    font-size: 2rem; /* Tamaño del texto de los subtítulos */
+    margin-bottom: 20px; /* Espaciado inferior */
+    text-align: center; /* Subtítulos centrados */
+    color: #2c3e50; /* Color del texto */
+}
+
+p {
+    margin-bottom: 20px; /* Espaciado inferior entre párrafos */
+    font-size: 1.1rem; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+}
+
+/* Estilo general para enlaces */
+a {
+    color: #3498db; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    transition: color 0.3s ease; /* Transición suave al cambiar el color del enlace */
+}
+
+a:hover {
+    color: #1abc9c; /* Cambia el color al pasar el ratón por encima */
+}
+
+/* Estilo para secciones destacadas con texto */
+.highlighted-text {
+    color: #2c3e50; /* Color del texto destacado */
+    font-weight: bold; /* Texto en negrita */
+    background-color: #eaf2f8; /* Fondo claro */
+    padding: 10px; /* Espaciado interno */
+    border-left: 4px solid #3498db; /* Barra de color a la izquierda */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para el pie de página (footer) */
+footer {
+    background-color: #34495e; /* Color de fondo oscuro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Centra el contenido del pie de página */
+    padding: 20px; /* Espaciado interno */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    bottom: 0; /* Se posiciona en la parte inferior */
+    font-size: 0.9rem; /* Tamaño del texto */
+}
+
+/* Estilos para botones destacados */
+.button-primary {
+    background-color: #3498db; /* Color de fondo del botón */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.button-primary:hover {
+    background-color: #1abc9c; /* Color de fondo cuando se pasa el ratón por encima */
+}
+
+/* Estilos para enlaces de redes sociales */
+.social-links {
+    display: flex; /* Flexbox para organizar los iconos en línea */
+    justify-content: center; /* Centra los iconos */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.social-links a {
+    margin: 0 10px; /* Espaciado horizontal entre los iconos */
+    color: #3498db; /* Color de los iconos */
+    font-size: 1.5rem; /* Tamaño de los iconos */
+    transition: color 0.3s ease; /* Transición suave del color de los iconos */
+}
+
+.social-links a:hover {
+    color: #1abc9c; /* Color del icono al pasar el ratón por encima */
+}
+
+/* Estilos para los botones de acordeón */
+.accordion {
+    background-color: #3498db; /* Color de fondo del acordeón */
+    color: #fff; /* Texto blanco */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+    padding: 15px; /* Espaciado interno */
+    width: 100%; /* El acordeón ocupa todo el ancho */
+    text-align: left; /* Texto alineado a la izquierda */
+    border: none; /* Sin borde */
+    outline: none; /* Sin borde de enfoque */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+    margin-bottom: 5px; /* Espaciado inferior entre acordeones */
+    font-size: 1.1rem; /* Tamaño de la fuente */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.accordion:hover {
+    background-color: #1abc9c; /* Color de fondo cuando se pasa el ratón por encima */
+}
+
+.accordion.active {
+    background-color: #1abc9c; /* Color de fondo cuando el acordeón está activo */
+}
+
+/* Estilos para el contenido desplegable del acordeón */
+.panel {
+    background-color: #eaf2f8; /* Fondo claro */
+    overflow: hidden; /* Esconde el contenido cuando el acordeón está cerrado */
+    max-height: 0; /* Altura inicial del panel cerrada */
+    transition: max-height 0.3s ease-out; /* Transición suave para abrir/cerrar el panel */
+    padding: 0 18px; /* Espaciado interno en los lados */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.panel p {
+    padding: 10px 0; /* Espaciado interno vertical */
+    color: #333; /* Color del texto */
+}
