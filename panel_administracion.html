@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles_admin.css"> <!-- Archivo de estilos para el panel de administración -->
+    <!-- Enlace a la hoja de estilos específica para el panel de administración -->
+    <link rel="stylesheet" href="styles_admin.css">
     <title>Panel de Administración - USMPDROJ</title>
 </head>
-<body>
+<body data-page="admin">
+    <!-- Cabecera del panel de administración -->
     <header>
         <h1>Panel de Administración - USMPDROJ</h1>
-        <!-- Barra de navegación del panel de administración -->
+        <!-- Menú de navegación con enlaces a otras secciones del sitio -->
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="panel_administracion.html">Panel</a></li>
                 <li><a href="services.html">Servicios</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="logout.html">Cerrar Sesión</a></li>
+                <!-- Botón de cierre de sesión -->
+                <li><a href="#" class="logout-button">Cerrar Sesión</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Sección para la gestión de usuarios -->
+        <!-- Sección para la gestión de usuarios dentro del panel de administración -->
         <section class="admin-panel">
             <h2>Gestión de Usuarios</h2>
+            <!-- Botón para agregar un nuevo usuario -->
             <button class="btn-add" onclick="location.href='add_user.html'">Agregar Usuario</button>
+            <!-- Tabla que muestra la lista de usuarios -->
             <table>
                 <thead>
                     <tr>
@@ -36,24 +40,28 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Ejemplo de usuario dentro de la tabla -->
                     <tr>
                         <td>Juan Pérez</td>
                         <td>juan.perez@email.com</td>
                         <td>Administrador</td>
                         <td>
+                            <!-- Botones de acción para editar y eliminar usuarios -->
                             <button class="btn-edit">Editar</button>
                             <button class="btn-delete">Eliminar</button>
                         </td>
                     </tr>
-                    <!-- Más filas de usuarios se pueden agregar aquí -->
+                    <!-- Aquí se pueden agregar más filas de usuarios -->
                 </tbody>
             </table>
         </section>
 
-        <!-- Sección para la gestión de servicios -->
+        <!-- Sección para la gestión de servicios dentro del panel de administración -->
         <section class="admin-panel">
             <h2>Gestión de Servicios</h2>
+            <!-- Botón para agregar un nuevo servicio -->
             <button class="btn-add" onclick="location.href='add_service.html'">Agregar Servicio</button>
+            <!-- Tabla que muestra la lista de servicios -->
             <table>
                 <thead>
                     <tr>
@@ -64,24 +72,29 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Ejemplo de servicio dentro de la tabla -->
                     <tr>
                         <td>Servicio A</td>
                         <td>Descripción del Servicio A</td>
                         <td>Activo</td>
                         <td>
+                            <!-- Botones de acción para editar y eliminar servicios -->
                             <button class="btn-edit">Editar</button>
                             <button class="btn-delete">Eliminar</button>
                         </td>
                     </tr>
-                    <!-- Más filas de servicios se pueden agregar aquí -->
+                    <!-- Aquí se pueden agregar más filas de servicios -->
                 </tbody>
             </table>
         </section>
     </main>
 
+    <!-- Pie de página con derechos de autor -->
     <footer>
-        <!-- Pie de página del panel de administración -->
         <p>&copy; 2024 USMPDROJ. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Enlace al archivo JavaScript que controla la funcionalidad del panel -->
+    <script src="mainHandler.js"></script>
 </body>
 </html>
