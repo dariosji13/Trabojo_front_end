@@ -24,9 +24,9 @@
     <main>
         <h2>Iniciar Sesión</h2>
         <!-- Formulario para iniciar sesión -->
-        <form action="login.php" method="POST" class="auth-form"> <!-- Clase auth-form para estilos específicos -->
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required> <!-- Campo de texto para el nombre de usuario -->
+        <form action="/login" method="POST" class="auth-form"> <!-- Cambia la acción a /login -->
+            <label for="email">Correo Electrónico:</label> <!-- Cambiar etiqueta a 'Correo Electrónico' -->
+            <input type="email" id="email" name="email" required> <!-- Cambia el nombre de 'username' a 'email' -->
 
             <label for="password">Contraseña:</label>
             <input type="password" id="password" name="password" required> <!-- Campo de contraseña -->
